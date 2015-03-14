@@ -1,0 +1,135 @@
+/*ESTILOS GENERALES DE LA WEB*/
+*{
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	text-align: center;
+}
+
+#wrapper{
+	text-align: left;
+	width: 1000px;
+	margin: 0px auto;
+	border: 1px solid black;
+}
+
+#encabezado, #central, #pie{
+	margin: 10px;
+	padding: 20px;
+	border:1px solid black;
+}
+
+#encabezado img{
+	width:938px;
+}
+
+#menu, #contenido{
+	display: inline-block;
+	border:1px solid black;
+	vertical-align: top;
+	min-height: 200px;
+}
+
+#menu{
+	width: 30%;
+}
+
+#contenido{
+	width: 68%;
+}
+
+#pie{
+	background-color: #96C63D;
+	font-size: 25px;
+	text-align: center;
+}
+
+/*ESTILOS PARA EL CONTENIDO*/
+
+#contenido header{
+	background-color: #D41B68;
+	color: #FFFFFF;
+	font-size: 30px;
+	border-radius: 15px;
+	padding:10px;
+	margin: 10px;
+}
+
+#contenido article{
+	background-color: #71A5D9;
+	font-size: 18px;
+	color: #E5E5E5;
+	padding: 5px;
+	margin: 5px 30px 5px 15px;
+}
+
+#contenido article *{
+	vertical-align: middle;
+}
+
+#contenido article img{
+	width: 50px;
+}
+
+#contenido article a{
+	text-decoration: none;
+	color: #F8F8F8;
+	font-size: 20px;
+}
+
+#contenido article a:hover{
+	text-decoration: underline;
+	color: #000000;
+}
+
+/*PAra estilos del menu*/
+
+#menu ul{
+	list-style: none;
+}
+
+#menu ul li{
+	background-color: #50246C;
+	color: #96C63D;
+	font-size: 30px;
+	padding:2px;
+	margin: 2px;
+}
+
+#menu ul li a{
+	color: #96C63D;
+	text-decoration: none;
+}
+
+#menu ul li a:hover{
+	color: white;
+}
+
+/*Estilos para mi formulario de insertar y actualizar*/
+#contenido form fieldset{
+	margin:10px;
+	padding:10px;
+}
+
+#contenido form fieldset span{
+	display:inline-block;
+	width:200px;
+	vertical-align:top;
+}
+
+#contenido form fieldset input{
+	width:350px;
+	height:25px;
+}
+
+#contenido form fieldset textarea{
+	width:350px;
+	height:150px;
+}
+
+#contenido form fieldset input[type=submit]{
+	width:150px;
+	height:25px;
+}
