@@ -133,3 +133,15 @@ body{
 	width:150px;
 	height:25px;
 }
+
+#contenido .imagen{
+	display:inline-block;
+	width: 165px;
+	padding:10px;
+	margin:10px;
+	vertical-align: top;
+}
+
+#contenido .imagen img{
+	width:165px;
+}
