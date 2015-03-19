@@ -1,3 +1,7 @@
+<?php
+if($_SESSION['conectado']){
+?>
+
 <header>Modificacion de noticia</header>
 
 <?php
@@ -34,4 +38,8 @@ if($consulta==true){
 	echo 'Ha habido un problema al modificar';
 }
 
+?>
+
+<?php
+}
 ?>

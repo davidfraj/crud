@@ -1,4 +1,8 @@
 <?php
+if($_SESSION['conectado']){
+?>
+
+<?php
 //Recojo el id de noticia
 $id_not=$_GET['id_not'];
 //Hago una consulta a la bbdd sobre esa noticia
@@ -33,3 +37,7 @@ $fila=$consulta->fetch_array();
 		<input type="submit" name="enviar" value="Enviar">
 	</fieldset>
 </form>
+
+<?php
+}
+?>

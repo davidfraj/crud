@@ -1,3 +1,7 @@
+<?php
+if($_SESSION['conectado']){
+?>
+
 <header>Alta de imagen</header>
 
 <form method="post" action="index.php?p=inserciongal.php" enctype="multipart/form-data">
@@ -17,3 +21,7 @@
 	</fieldset>
 	
 </form>
+
+<?php
+}
+?>

@@ -1,4 +1,5 @@
 <?php
+session_start();
 //Incluyo la conexion
 include('includes/conexion.php');
 
@@ -16,6 +17,12 @@ if(isset($_GET['p'])){
 	<meta charset="UTF-8">
 	<title>Web de noticias</title>
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/lightbox.min.js"></script>
+
+	<link href="css/lightbox.css" rel="stylesheet" />
+	
 </head>
 <body>
 	<section id="wrapper">
@@ -24,6 +31,7 @@ if(isset($_GET['p'])){
 		</header>
 		<section id="central">
 			<nav id="menu">
+				<?php include('includes/login.php');?>
 				<?php include('includes/menu.php');?>
 			</nav>
 			<div id="contenido">

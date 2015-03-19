@@ -1,3 +1,7 @@
+<?php
+if($_SESSION['conectado']){
+?>
+
 <header>Borrado de noticia</header>
 
 <?php
@@ -16,4 +20,8 @@ if($consulta==true){
 	echo 'Ha habido un problema al eliminar.';
 }
 
+?>
+
+<?php
+}
 ?>

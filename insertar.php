@@ -1,3 +1,7 @@
+<?php
+if($_SESSION['conectado']){
+?>
+
 <header>Alta de noticia</header>
 <form method="post" action="index.php?p=insercion.php" enctype="multipart/form-data">
 	<fieldset>
@@ -18,3 +22,11 @@
 		<input type="submit" name="enviar" value="Enviar">
 	</fieldset>
 </form>
+
+<?php
+}
+?>
+
+<?php
+}
+?>

@@ -14,6 +14,9 @@
 			Galeria
 		</a>
 	</li>
+	<?php
+	if($_SESSION['conectado']){
+	?>
 	<li>
 		<a href="index.php?p=insertar.php">
 			Nueva noticia
@@ -24,4 +27,7 @@
 			Nueva imagen
 		</a>
 	</li>
+	<?php
+	}
+	?>
 </ul>

@@ -9,10 +9,20 @@ while($fila=$consulta->fetch_array()){
 			<img src="imagenes/<?php echo $fila['imagen_not'];?>">
 			<?php echo $fila['titulo_not'];?>
 		</a>
+
+
+		<?php
+		if($_SESSION['conectado']){
+		?>
+
 		-
 		<a href="index.php?p=borrar.php&id_not=<?php echo $fila['id_not'];?>" onCLick="return confirm('Estas seguro?');"><button>Borrar</button></a>
 		-
 		<a href="index.php?p=modificar.php&id_not=<?php echo $fila['id_not'];?>"><button>Modificar</button></a>
+
+		<?php
+		}
+		?>
 
 	</article>
 	<?php

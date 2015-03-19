@@ -1,3 +1,7 @@
+<?php
+if($_SESSION['conectado']){
+?>
+
 <header>Modificacion de imagen</header>
 
 <?php
@@ -33,4 +37,8 @@ if($consulta==true){
 	echo 'Ha habido un problema al modificar';
 }
 
+?>
+
+<?php
+}
 ?>

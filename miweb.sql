@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 17-03-2015 a las 13:36:33
+-- Tiempo de generación: 19-03-2015 a las 13:49:50
 -- Versión del servidor: 5.6.21
 -- Versión de PHP: 5.6.3
 
@@ -65,6 +65,26 @@ INSERT INTO `noticias` (`id_not`, `titulo_not`, `contenido_not`, `imagen_not`) V
 (4, 'Apple Watch, esto es lo que necesitas saber', 'Seguramente uno de los lanzamiento de este 2015 se producirá el próximo mes de abril. Hablamos del Apple Watch, la entrada de la firma de Cupertino en el novísimo mercado de los smartwatchs donde hasta ahora, Android Wear y en menor medida Tizen con el último modelo de Samsung han sido los protagonistas absolutos.<br><br>\r\nEste mercado todavía naciendo, con los usuarios dubitativos sobre la utilidad real de un reloj avanzado, recibirá pues al Apple Watch sin un camino muy claro creado todavía. Por ahora el deporte, la cuantificación y las notificaciones son los ámbitos donde el smartwatch quiere coger el sitio del smartphone en determinadas circunstancias. Toma nota de cómo planea hacerlo el Apple Watch<br><br>', '650_1000_apple-watch-home.jpg'),
 (5, 'Aragón registra la menor bajada en el número de viajeros de autobús en enero', 'Zaragoza.- El número de viajeros en autobús urbano ha bajado en Aragón en enero un 1,3% respecto al mismo mes del año anterior, lo que supone que un total de 9.934.000 personas han utilizado este transporte público.\r\n\r\nEl descenso interanual sitúa a Aragón como la que menos baja en el conjunto de las comunidades, según publica este viernes el Instituto Nacional de Estadística (INE).\r\n\r\nEn el conjunto nacional, más de 363,2 millones de pasajeros utilizan el transporte público en enero, un 2,3% menos que en enero de 2014. El transporte urbano disminuye un 2,0% y el interurbano baja un 1,9% en tasa anual. Dentro de este, el transporte por autobús es el que más disminuye, con una tasa del –2,5%.', 'img1303332s.jpg');
 
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usuarios`
+--
+
+CREATE TABLE IF NOT EXISTS `usuarios` (
+`id_usu` int(11) NOT NULL,
+  `correo_usu` varchar(200) COLLATE utf8_spanish_ci NOT NULL,
+  `nombre_usu` varchar(200) COLLATE utf8_spanish_ci NOT NULL,
+  `clave_usu` varchar(200) COLLATE utf8_spanish_ci NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`id_usu`, `correo_usu`, `nombre_usu`, `clave_usu`) VALUES
+(1, 'davidfraj@gmail.com', 'David Fraj Blesa', '25d55ad283aa400af464c76d713c07ad');
+
 --
 -- Índices para tablas volcadas
 --
@@ -82,6 +102,12 @@ ALTER TABLE `noticias`
  ADD PRIMARY KEY (`id_not`);
 
 --
+-- Indices de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+ ADD PRIMARY KEY (`id_usu`);
+
+--
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
@@ -95,6 +121,11 @@ MODIFY `id_ima` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 ALTER TABLE `noticias`
 MODIFY `id_not` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
+--
+-- AUTO_INCREMENT de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+MODIFY `id_usu` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

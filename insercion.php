@@ -1,3 +1,7 @@
+<?php
+if($_SESSION['conectado']){
+?>
+
 <header>Alta de noticia realizada</header>
 
 <?php
@@ -22,4 +26,8 @@ if($consulta==true){
 	echo 'Ha habido un problema al insertar';
 }
 
+?>
+
+<?php
+}
 ?>
