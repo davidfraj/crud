@@ -26,7 +26,3 @@ if($_SESSION['conectado']){
 <?php
 }
 ?>
-
-<?php
-}
-?>
