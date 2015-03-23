@@ -28,6 +28,7 @@ if(isset($_GET['desconectar'])){
 if($_SESSION['conectado']){
 	echo 'Bienvenido '.$_SESSION['conectado'].' - ';
 	echo '<a href="index.php?desconectar=si"><button>Desconectar</button></a>';
+	echo '<a href="index.php?p=modificarusu.php"><button>Cambiar datos</button></a>';
 }else{
 	//Sino, muestro el formulario para que se conecte
 ?>
@@ -36,6 +37,7 @@ if($_SESSION['conectado']){
 	<input type="password" name="clave" placeholder="clave">
 	<input type="submit" name="conectar" value="conectar">
 </form>
+<a href="index.php?p=registro.php">Registrate</a>
 <?php
 }
 ?>
